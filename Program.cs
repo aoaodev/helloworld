@@ -1,5 +1,9 @@
-﻿Console.WriteLine("Hello, AoAo! Another lovely day to learn!");
-decimal a = 42.1m; //explicit type 
-decimal b = 38.2m;
-decimal c = a + b;
-Console.WriteLine($"The answer is {c}");
+﻿var names = new List<string> { "AoAo", "Ana", "Felipe" };
+
+names.Add("David");
+names.Add("Sydney");
+names.Add("Stan");
+foreach (var name in names)
+{
+    Console.WriteLine($"Hello {name.ToUpper()}!");
+}
